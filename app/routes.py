@@ -26,3 +26,7 @@ def login():
             form.username.data, form.remember_me.data))
         return redirect('/index')
     return render_template('login.html', title='Sign In', form=form)
+
+@app.route('/other')
+def other():
+	return 'hello from other page'
