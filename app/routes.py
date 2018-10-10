@@ -28,5 +28,5 @@ def login():
     return render_template('login.html', title='Sign In', form=form)
 
 @app.route('/hello')
-def hello():
+def hello(): 
     return render_template('hello.html', title='Homework 1')
