@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <h1>Suggestions for Dr. Delozier</h1>
+    <p>I don't remember you mentioning in class the requirements.txt file to keep track of required packages. I think this would be helpful for tracking packages and versions on pythonanywhere as well as personal computers</p>
+    <ul>
+        <li>In <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xv-a-better-application-structure">mega tutorial at the bottom of the page</a></li>
+        <li><code>(venv) $ pip freeze > requirements.txt</code></li>
+        <li><code>(venv) $ pip install -r requirements.txt</code></li>
+    </ul>
+
     <h1>Hi, {{ current_user.username }}!</h1>
     {% if form %}
         <form action="" method="post">
